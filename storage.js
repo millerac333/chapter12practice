@@ -78,4 +78,21 @@ const recordPlayer = {
       description: "This is an Apple desktop computer that my fiance and I share. Unfortunatly, is it readily used."
   }
 
-  
+  HomeInventoryDatabase.electronics.push(recordPlayer)
+  HomeInventoryDatabase.furniture.push(woodKitchenTable)
+  HomeInventoryDatabase.electronics.push(flatscreenTelevison)
+  HomeInventoryDatabase.furniture.push(couch)
+  HomeInventoryDatabase.furniture.push(bed)
+  HomeInventoryDatabase.crafts.push(sewingBox)
+  HomeInventoryDatabase.furniture.push(nightstand)
+  HomeInventoryDatabase.furniture.push(crib)
+  HomeInventoryDatabase.crafts.push(coloredPencilSet)
+  HomeInventoryDatabase.electronics.push(appleDesktop)
+
+  const saveDatabase = function (HomeInventoryDatabase, localStorageKey) {
+      const stringifiedDatabase = JSON.stringify(HomeInventoryDatabase)
+      localStorage.setItem(localStorageKey,stringifiedDatabase)
+}
+
+
+
